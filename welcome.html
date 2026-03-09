@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3;url=https://bsb.kh.edu.tw/">
+    <title>歡迎進來</title>
+</head>
+<body style="text-align:center; padding-top:100px;">
+    <h1><span id="user">訪客</span>，歡迎</h1>
+    <p>登入成功！正在為您跳轉至高雄市補習班資訊管理系統...</p>
+    <img src="welcome.jpg" width="300">
+
+    <script>
+        // 抓取網址傳過來的姓名
+        const name = new URLSearchParams(window.location.search).get('username');
+        if(name) document.getElementById('name').innerText = name;
+    </script>
+</body>
+</html>
